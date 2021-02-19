@@ -29,7 +29,7 @@
       transform: translate(-8.5rem, 4rem) scale(1.7);
     }
     &--2 {
-      transform: translateX(2rem) scale(1.4);
+      transform: translateX(2.5rem) scale(1.5);
     }
   }
 
@@ -56,8 +56,13 @@
   }
 
   &:hover &__image {
-    transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
+  }
+  &:hover &__image--1 {
+    transform: translateX(-6rem) scale(1);
+  }
+  &:hover &__image--2 {
+    transform: translateX(2.5rem) scale(1.4);
   }
 }
 

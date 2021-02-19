@@ -572,8 +572,8 @@ body {
 }
 
 .story__image--2 {
-  -webkit-transform: translateX(2rem) scale(1.4);
-          transform: translateX(2rem) scale(1.4);
+  -webkit-transform: translateX(2.5rem) scale(1.5);
+          transform: translateX(2.5rem) scale(1.5);
 }
 
 .story__text {
@@ -603,10 +603,18 @@ body {
 }
 
 .story:hover .story__image {
-  -webkit-transform: translateX(-4rem) scale(1);
-          transform: translateX(-4rem) scale(1);
   -webkit-filter: blur(3px) brightness(80%);
           filter: blur(3px) brightness(80%);
+}
+
+.story:hover .story__image--1 {
+  -webkit-transform: translateX(-6rem) scale(1);
+          transform: translateX(-6rem) scale(1);
+}
+
+.story:hover .story__image--2 {
+  -webkit-transform: translateX(2.5rem) scale(1.4);
+          transform: translateX(2.5rem) scale(1.4);
 }
 
 .changed-image {
@@ -633,8 +641,8 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(131, 203, 236, 0.8)), to(rgba(0, 84, 148, 0.9))), url("../../img/kosel.jpg");
-  background-image: linear-gradient(to right bottom, rgba(131, 203, 236, 0.8), rgba(0, 84, 148, 0.9)), url("../../img/kosel.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(131, 203, 236, 0.8)), to(rgba(0, 84, 148, 0.9))), url("../img/kosel.jpg");
+  background-image: linear-gradient(to right bottom, rgba(131, 203, 236, 0.8), rgba(0, 84, 148, 0.9)), url("../img/kosel.jpg");
   background-size: cover;
   background-position: bottom;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -659,8 +667,8 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(131, 203, 236, 0.8)), to(rgba(0, 84, 148, 0.9))), url("../../img/torah.jpg");
-  background-image: linear-gradient(to right bottom, rgba(131, 203, 236, 0.8), rgba(0, 84, 148, 0.9)), url("../../img/torah.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(131, 203, 236, 0.8)), to(rgba(0, 84, 148, 0.9))), url("../img/torah.jpg");
+  background-image: linear-gradient(to right bottom, rgba(131, 203, 236, 0.8), rgba(0, 84, 148, 0.9)), url("../img/torah.jpg");
   background-size: cover;
   background-position: bottom;
   -webkit-transform: skewY(-4deg);
