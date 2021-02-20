@@ -87,3 +87,47 @@
     transform: translateY(0);
   }
 }
+
+.contact__link {
+  display: inline-block;
+  width: 70%;
+  padding: 1.8rem;
+  border-radius: 300rem;
+  box-shadow: 0 1.5rem 3rem rgba($color-black, 0.4);
+  color: $color-grey-light-2;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.8rem;
+
+  &--1 {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+    &::after {
+      background-color: $color-secondary-dark;
+    }
+  }
+  &--2 {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    &::after {
+      background-color: $color-primary-dark;
+    }
+  }
+  &--3 {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-tertiary-light,
+      $color-tertiary-dark
+    );
+    &::after {
+      background-color: $color-tertiary-dark;
+    }
+  }
+}

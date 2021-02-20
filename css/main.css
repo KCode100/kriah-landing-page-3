@@ -202,6 +202,24 @@ body {
   margin-top: 10rem;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -298,6 +316,47 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.contact__link {
+  display: inline-block;
+  width: 70%;
+  padding: 1.8rem;
+  border-radius: 300rem;
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  color: #eee;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.contact__link--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+.contact__link--1::after {
+  background-color: #ff7730;
+}
+
+.contact__link--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#83cbec), to(#005494));
+  background-image: linear-gradient(to right bottom, #83cbec, #005494);
+}
+
+.contact__link--2::after {
+  background-color: #005494;
+}
+
+.contact__link--3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.contact__link--3::after {
+  background-color: #28b485;
 }
 
 .composition {
@@ -441,18 +500,19 @@ body {
 }
 
 .card__picture--1 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(../img/nat-5.jpg);
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(../img/barmitzva-boy.jpg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/barmitzva-boy.jpg);
+  background-position: bottom;
 }
 
 .card__picture--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#83cbec), to(#005494)), url(../img/nat-6.jpg);
-  background-image: linear-gradient(to right bottom, #83cbec, #005494), url(../img/nat-6.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#83cbec), to(#005494)), url(../img/shul.jpg);
+  background-image: linear-gradient(to right bottom, #83cbec, #005494), url(../img/shul.jpg);
 }
 
 .card__picture--3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), url(../img/nat-7.jpg);
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-7.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), url(../img/learning-talmud.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/learning-talmud.jpg);
 }
 
 .card__heading {
@@ -539,7 +599,7 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -689,6 +749,46 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background-color: #f7f7f7;
+  position: relative;
+}
+
+.section-contact {
+  padding: 15rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#83cbec), to(#005494));
+  background-image: linear-gradient(to right bottom, #83cbec, #005494);
+}
+
+.contact {
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/journey.jpg") center/cover no-repeat;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  height: 50rem;
+  width: 100%;
+}
+
+.contact__info {
+  width: 50%;
+  height: 85%;
+  padding: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 3rem;
+}
+
+.contact__item {
+  min-width: 100%;
+}
+
+.contact__icon {
+  margin-left: 2rem;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */
